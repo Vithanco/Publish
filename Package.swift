@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.9
 
 /**
 *  Publish
@@ -10,7 +10,7 @@ import PackageDescription
 
 let package = Package(
     name: "Publish",
-    platforms: [.macOS(.v12)],
+    platforms: [.macOS(.v14)],
     products: [
         .library(name: "Publish", targets: ["Publish"]),
         .executable(name: "publish-cli", targets: ["PublishCLI"])
@@ -26,7 +26,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/johnsundell/files.git",
-            from: "4.0.0"
+            from: "4.3.0"
         ),
         .package(
             url: "https://github.com/johnsundell/codextended.git",
